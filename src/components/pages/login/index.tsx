@@ -2,7 +2,7 @@ import { useEffect, useState, ChangeEvent, FormEvent } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
-import logo from 'public/images/logo.png';
+import logo1 from 'public/images/logo1.png';
 import Button from '@src/components/base/button';
 import Input from '@src/components/base/input';
 import { postAuth } from '@src/api/auth';
@@ -56,19 +56,21 @@ const LoginPage = () => {
 		<LoginWrapper>
 			<Register>
 				<Logo>
-					<Image src={logo} alt='logo' />
+					<Image src={logo1} alt='logo' />
 				</Logo>
 
 				<LoginDescription>
-					<p>Hello !</p>
-					<p>Please enter your name and email.</p>
+					
+					<p >لطفا ایمیل و رمز عبور خود را وارد کنید
+						
+					</p>
 				</LoginDescription>
 
 				<Form onSubmit={handleSubmit}>
 					<Input
 						width={'335px'}
 						height={'50px'}
-						placeholder='email'
+						placeholder='ایمیل'
 						name='email'
 						value={inputValues.email}
 						onChange={handleChange}
@@ -78,16 +80,17 @@ const LoginPage = () => {
 							width={'335px'}
 							height={'50px'}
 							name='password'
-							placeholder='password'
+							placeholder='رمز عبور'
 							type={'password'}
 							value={inputValues.password}
 							onChange={handleChange}
+							
 						/>
 					</Password>
 
 					<FormButton>
 						<Button width={'335px'} height={'50px'} onClick={handleSubmitForm}>
-							Login
+							ورود
 						</Button>
 					</FormButton>
 				</Form>

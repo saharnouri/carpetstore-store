@@ -16,13 +16,13 @@ type ButtonProps = {
 
 const Button = ({
 	children,
-	radius = 7,
+	radius = 100,
 	color = '#2b2b71',
 	background = 'white',
 	width = 100,
 	height = 40,
 	disable = false,
-	borderColor = '3px solid #cf191a',
+	borderColor = '3px solid ',
 	onClick,
 	fontSize,
 	...props

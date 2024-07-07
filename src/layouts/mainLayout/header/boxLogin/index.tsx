@@ -17,7 +17,7 @@ const BoxLogin = () => {
 		return (
 			<Link href={routes.login}>
 				<Button width={165} fontSize={15}>
-					Login | Register
+					ورود | ثبت نام
 				</Button>
 			</Link>
 		);

@@ -14,6 +14,8 @@ type InputProps = {
 	disabled?: boolean;
 	pattern?: undefined;
 	placeholder?: string | number;
+	
+
 };
 
 const Input = ({
@@ -21,7 +23,7 @@ const Input = ({
 	value,
 	onChange,
 	type = 'text',
-	radius = 7,
+	radius = 100,
 	width = 200,
 	height = 40,
 	borderColor = '3px solid #e0e0e6',
@@ -47,6 +49,8 @@ const Input = ({
 				width,
 				height,
 				borderColor,
+				
+				
 			}}
 		/>
 	);

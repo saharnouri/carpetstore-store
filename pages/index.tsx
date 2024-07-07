@@ -18,7 +18,7 @@ const Home = ({ data }: HomeProps) => {
 	return (
 		<div>
 			<Head>
-				<title>spiceJet</title>
+				<title>carpetdiem</title>
 			</Head>
 
 			<HomeContent data={data} />
