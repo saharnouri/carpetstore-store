@@ -14,8 +14,6 @@ type InputProps = {
 	disabled?: boolean;
 	pattern?: undefined;
 	placeholder?: string | number;
-	
-
 };
 
 const Input = ({
@@ -49,8 +47,6 @@ const Input = ({
 				width,
 				height,
 				borderColor,
-				
-				
 			}}
 		/>
 	);

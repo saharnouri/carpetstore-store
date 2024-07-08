@@ -11,7 +11,7 @@ export const Form = styled.form(() => ({
 	display: 'flex',
 	flexDirection: 'column',
 	alignItems: 'flex-start',
-	direction:'rtl',
+	direction: 'rtl',
 }));
 
 export const Register = styled.div(() => ({
@@ -23,7 +23,8 @@ export const Register = styled.div(() => ({
 	height: 440,
 	borderRadius: 100,
 	padding: 30,
-	boxShadow:'rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px',
+	boxShadow:
+		'rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px',
 }));
 
 export const Logo = styled.div(() => ({
@@ -35,8 +36,8 @@ export const LoginDescription = styled.div(() => ({
 	fontSize: 18,
 	marginTop: 35,
 	marginBottom: 35,
-	textAlign:'right',
-	color:'#2b2b71',
+	textAlign: 'right',
+	color: '#2b2b71',
 }));
 
 export const Password = styled.div(() => ({
@@ -45,8 +46,4 @@ export const Password = styled.div(() => ({
 
 export const FormButton = styled.div(() => ({
 	marginTop: 25,
-	
-	
 }));
-
-

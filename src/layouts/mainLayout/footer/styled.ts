@@ -15,9 +15,8 @@ export const FooterWrapper = styled.div(() => ({
 	...theme.wrapper,
 	position: 'relative',
 	padding: '14px 20px',
-	direction:'rtl',
-	backgroundColor:'#ade8f4',
-	
+	direction: 'rtl',
+	backgroundColor: '#ade8f4',
 }));
 
 export const DivLogo = styled.div(() => ({
@@ -60,7 +59,6 @@ export const icon = styled.image(() => ({
 	display: 'flex',
 	justifyContent: 'flex-start',
 	alignItems: 'center',
-	
 }));
 
 export const SpanContentUs = styled.span(() => ({

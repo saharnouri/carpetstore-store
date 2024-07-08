@@ -60,10 +60,7 @@ const LoginPage = () => {
 				</Logo>
 
 				<LoginDescription>
-					
-					<p >لطفا ایمیل و رمز عبور خود را وارد کنید
-						
-					</p>
+					<p>لطفا ایمیل و رمز عبور خود را وارد کنید</p>
 				</LoginDescription>
 
 				<Form onSubmit={handleSubmit}>
@@ -84,7 +81,6 @@ const LoginPage = () => {
 							type={'password'}
 							value={inputValues.password}
 							onChange={handleChange}
-							
 						/>
 					</Password>
 

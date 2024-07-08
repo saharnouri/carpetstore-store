@@ -22,12 +22,11 @@ type ProductType = {
 
 const Product = (props: ProductType) => {
 	const product = props.data.status === 200;
-	console.log('props', props);
 
 	return (
 		<>
 			<Head>
-				<title>spiceJet - Product</title>
+				<title>carpet-store</title>
 			</Head>
 
 			{product ? <ProductContent data={props.data.data} /> : 'There is no product'}

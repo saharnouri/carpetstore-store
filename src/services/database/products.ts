@@ -1,4 +1,4 @@
-import Barberry1 from 'public/images/products/Barberry1.png';
+import Barberry1 from 'public/images/products/barberry1.png';
 import Barberry2 from 'public/images/products/Barberry2.png';
 import BlackCardamom1 from 'public/images/products/Black-Cardamom1.png';
 import BlackCardamom2 from 'public/images/products/Black-Cardamom2.png';
@@ -47,14 +47,6 @@ import StarAnise1 from 'public/images/products/Star-Anise1.png';
 import StarAnise2 from 'public/images/products/Star-Anise2.png';
 import WhiteMustard1 from 'public/images/products/White-Mustard1.png';
 import WhiteMustard2 from 'public/images/products/White-Mustard2.png';
-
-
-
-
-
-
-
-
 
 export const productsData = [
 	{
@@ -982,4 +974,3 @@ export const productsData = [
 		],
 	},
 ];
-

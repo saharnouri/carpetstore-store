@@ -18,9 +18,8 @@ export const HeaderWrapper = styled.div(() => ({
 	display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'space-between',
-	flexDirection:'row-reverse',
-	backgroundColor:'#ade8f4',
-	
+	flexDirection: 'row-reverse',
+	backgroundColor: '#ade8f4',
 }));
 
 export const ListCategories = styled.div(() => ({

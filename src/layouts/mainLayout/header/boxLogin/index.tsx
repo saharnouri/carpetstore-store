@@ -30,7 +30,7 @@ const BoxLogin = () => {
 
 			<DivIconCart>
 				<Link href={routes.cart}>
-					<Image src={cart} width={25} height={25}  alt='cart' />
+					<Image src={cart} width={25} height={25} alt='cart' />
 
 					{counter ? <Counter>{counter}</Counter> : <></>}
 				</Link>
