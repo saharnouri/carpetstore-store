@@ -14,6 +14,7 @@ type InputProps = {
 	disabled?: boolean;
 	pattern?: undefined;
 	placeholder?: string | number;
+	textAlign?: string | number;
 };
 
 const Input = ({

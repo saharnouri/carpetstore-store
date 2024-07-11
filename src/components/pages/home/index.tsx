@@ -18,8 +18,8 @@ const HomeContent = ({ data }: HomeContentProps) => {
 				<Image src={data.slider.link} alt={data.slider.alt} priority={true} />
 			</BannerFullWidth>
 
-			<ProductSlide list={data.sliderProducts.bestOffer.list} title={data.sliderProducts.bestOffer.title} />
-
+{/* 			<ProductSlide list={data.sliderProducts.bestOffer.list} title={data.sliderProducts.bestOffer.title} />
+ */}
 			<BannerFullWidth>
 				<Image src={data.bannerMiddle.link} alt={data.bannerMiddle.alt} />
 			</BannerFullWidth>

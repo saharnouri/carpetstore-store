@@ -6,5 +6,7 @@ export const InputContainer = styled.input(({ styles }: any) => ({
 	borderRadius: styles.radius,
 	border: styles.borderColor,
 	outline: 'none',
-	backgroundColor: '#ade8f4',
+	backgroundColor: '#ffff',
+	textAlign:'center',
+	
 }));

@@ -7,7 +7,6 @@ import { postCartChange } from '@src/api/cart';
 import score from 'public/icons/score.png';
 import share from 'public/icons/share.png';
 import interest from 'public/icons/interest.png';
-import ProductTabs from './productTabs';
 import { updateGlobalSlice } from '../../../store/globalSlice';
 import {
 	AlbumImage,
@@ -21,7 +20,6 @@ import {
 	Share,
 	ProductName,
 	ProductPrice,
-	ImagesProduct,
 } from './styled';
 
 const ProductContent = ({ data }: any) => {
@@ -44,50 +42,35 @@ const ProductContent = ({ data }: any) => {
 			router.push(routes.cart);
 		}
 	};
-	console.log(data);
 
 	return (
 		<>
 			<Wrapper>
-				<AlbumImage>
-					<IconProduct>
-						<Image src={interest} alt='interest' width={18} height={18} />
+				<div>
+					<AlbumImage>
+						<Image src={data.images[0]} alt='image' width={300} height={300} />
+					</AlbumImage>
 
-						<Share>
-							<Image src={share} alt='share' width={18} height={18} />
-						</Share>
-					</IconProduct>
+					<Product>
+						<ProductName>{data.title}</ProductName>
 
-					<Image src={data.images[0]} alt='image' width={300} height={300} />
+						<Image src={score} alt='score' />
 
-					<ImagesProduct>
-						{data.images.map((item: string, index: number) => (
-							<Image src={item} alt='image' width={100} height={100} key={index} />
-						))}
-					</ImagesProduct>
-				</AlbumImage>
+						<Description>{data.content}</Description>
 
-				<Product>
-					<ProductName>{data.title}</ProductName>
+						<ProductPrice>
+							<Price>price:</Price>
+							<Amount>{`تومان ${data.price}`}</Amount>
+						</ProductPrice>
 
-					<Image src={score} alt='score' />
-
-					<Description>{data.summery}</Description>
-
-					<ProductPrice>
-						<Price>price:</Price>
-						<Amount>{`$ ${data.price}`}</Amount>
-					</ProductPrice>
-
-					<ButtonBuy>
-						<Button width={'335px'} height={'50px'} onClick={handleBuy}>
-							Buy now
-						</Button>
-					</ButtonBuy>
-				</Product>
+						<ButtonBuy>
+							<Button width={'335px'} height={'50px'} onClick={handleBuy}>
+								Buy now
+							</Button>
+						</ButtonBuy>
+					</Product>
+				</div>
 			</Wrapper>
-
-			<ProductTabs data={data.description} />
 		</>
 	);
 };

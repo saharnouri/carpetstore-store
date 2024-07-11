@@ -5,4 +5,5 @@ export const Main = styled.main(() => ({
 	...theme.wrapper,
 	paddingTop: 80,
 	minHeight: '100vh',
+	
 }));

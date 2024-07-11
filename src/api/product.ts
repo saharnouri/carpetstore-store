@@ -6,7 +6,7 @@ type Response = {
 	status: 200 | 404;
 };
 
-export const getProductData = (id: string) => {
+export const getProductData = (id: any) => {
 	return new Promise<Response>((resolve) => {
 		const product: Response['data'] = productsData.find((product) => product.id === id) || {};
 

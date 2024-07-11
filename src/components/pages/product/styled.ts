@@ -7,6 +7,8 @@ export const Wrapper = styled.div(() => ({
 	display: 'flex',
 	marginTop: 90,
 	justifyContent: 'center',
+	flexDirection: 'column-reverse',
+	alignItems: 'center',
 
 	'@media (max-width: 768px)': {
 		flexWrap: 'wrap',
@@ -18,7 +20,6 @@ export const Wrapper = styled.div(() => ({
 }));
 
 export const Product = styled.div(() => ({
-	borderLeft: '5px solid #e0e0e6',
 	padding: '0px 0px 20px 20px',
 
 	'@media (max-width: 600px)': {
@@ -47,11 +48,6 @@ export const IconProduct = styled.div(() => ({
 	flexDirection: 'column',
 	right: 0,
 	filter: 'invert(0%) sepia(4%) saturate(2%) hue-rotate(270deg) brightness(60%) contrast(100%)',
-}));
-
-export const ImagesProduct = styled.div(() => ({
-	display: 'flex',
-	justifyContent: 'center',
 }));
 
 export const Share = styled.div(() => ({

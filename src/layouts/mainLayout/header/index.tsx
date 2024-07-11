@@ -13,11 +13,11 @@ const BoxLogin = dynamic(() => import('./boxLogin'), {
 });
 
 const listCategory = [
-	{ title: 'انتیک', link: 'masalas' },
-	{ title: 'عشایری', link: 'chat-masalas' },
-	{ title: 'هریس', link: 'pepper-Powder' },
-	{ title: 'تمام ابریشم', link: 'cooking-essentials' },
-	{ title: 'مجموعه ', link: 'refund-oil' },
+	{ title: 'انتیک', link: 'antique' },
+	{ title: 'عشایری', link: 'nomadic' },
+	{ title: 'هریس', link: 'heriz' },
+	{ title: 'تمام ابریشم', link: 'silk' },
+	
 ];
 
 const Header = () => {

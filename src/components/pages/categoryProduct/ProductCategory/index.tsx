@@ -50,14 +50,14 @@ const ProductCategory = ({ list }: ProductSlideProps) => {
 
 							<ProductFavorites>
 								<Score>
-									<Image src={score} alt='score' width={70} height={17} />
+									<Image src={score} alt='score' width={64} height={64} />
 								</Score>
 
 								<Image src={interest} alt='interest' width={18} height={18} />
 							</ProductFavorites>
-							<ProductPrice>{`$ ${item.price}`}</ProductPrice>
+							<ProductPrice>{`تومان ${item.price}`}</ProductPrice>
 						</Link>
-						<Button onClick={() => handleBuy(item.id)}>Add To Cart</Button>
+						<Button onClick={() => handleBuy(item.id)}>افزودن به سبد</Button>
 					</Product>
 				))
 			) : (

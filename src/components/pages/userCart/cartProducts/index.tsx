@@ -35,8 +35,6 @@ type CartListType = {
 
 const CartProducts = ({ cartList, setCartList }: ProductSlideProps) => {
 	const dispatch = useDispatch();
-	console.log('cartList', cartList);
-	console.log('setCartList', setCartList);
 	const increment = async (id: string) => {
 		const response = await postCartChange(id, 1);
 		if (response.status === 200) {
@@ -91,8 +89,7 @@ const CartProducts = ({ cartList, setCartList }: ProductSlideProps) => {
 									borderColor={'none'}
 									width={40}
 									height={35}
-									onClick={() => (item.total > 1 ? decrement(item.id) : '')}
-								>
+									onClick={() => (item.total > 1 ? decrement(item.id) : '')}>
 									-
 								</Button>
 
@@ -105,7 +102,7 @@ const CartProducts = ({ cartList, setCartList }: ProductSlideProps) => {
 
 							<PriceProduct>
 								<Total>Total:</Total>
-								<Price>{`$${item.price * item.total}`}</Price>
+								<Price>{`تومان${item.price * item.total}`}</Price>
 							</PriceProduct>
 						</OrderedProductDetails>
 					</OrderedProduct>

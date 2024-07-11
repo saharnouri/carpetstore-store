@@ -38,12 +38,12 @@ const Footer = () => {
 
 						<DivContentUs>
 							<Image src={envelop} width={25} height={25} alt='envelop' />
-							<SpanContentUs>tafteh@gmail.com</SpanContentUs>
+							<SpanContentUs>carpetdiem@gmail.com</SpanContentUs>
 						</DivContentUs>
 
 						<DivContentUs>
 							<Image src={mobile} width={25} height={25} alt='mobile' />
-							<SpanContentUs>09102416098</SpanContentUs>
+							<SpanContentUs>09365881788</SpanContentUs>
 						</DivContentUs>
 					</DivContentWrapper>
 				</DivContent>

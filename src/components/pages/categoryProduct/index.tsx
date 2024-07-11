@@ -21,11 +21,11 @@ type CategoryProductType = {
 
 const CategoryProduct = ({ data }: CategoryProductType) => {
 	const listCategory = [
-		{ title: 'masalas', link: 'masalas' },
-		{ title: 'chat masalas', link: 'chat-masalas' },
-		{ title: 'pepper Powder', link: 'pepper-Powder' },
-		{ title: 'cooking Essentials', link: 'cooking-essentials' },
-		{ title: 'refund Oil', link: 'refund-oil' },
+		{ title: 'تمام ابریشم', link: 'silk' },
+		{ title: 'هریس', link: 'heriz' },
+		{ title: 'عشایری', link: 'nomadic' },
+		{ title: ' انتیک', link: 'antique' },
+		
 	];
 
 	return (
@@ -33,10 +33,14 @@ const CategoryProduct = ({ data }: CategoryProductType) => {
 			<ProductContent>
 				<FilterProducts>
 					<p>
-						Showing {data.length} of {data.length} product
+						نمایش {data.length} از {data.length} محصولات
 					</p>
+					<Search>
+						<Input placeholder={'جست و جو'} borderColor={'2px solid #2b2b71'} />
+					</Search>
 					<div>
-						<span>Filter</span>
+						<span>فیلتر</span>
+
 						<Image src={filter} alt='filter' width={18} height={18} />
 					</div>
 				</FilterProducts>
@@ -47,19 +51,9 @@ const CategoryProduct = ({ data }: CategoryProductType) => {
 			</ProductContent>
 
 			<Sidebar>
-				<Search>
-					<span>Search</span>
-					<Input borderColor={'2px solid #cb1213'} />
-				</Search>
-
+				
 				<div>
-					<span>Price range</span>
-
-					<PriceRange />
-				</div>
-
-				<div>
-					<span>Category</span>
+				
 					<CategoryFilter>
 						{listCategory.map((item, index) => (
 							<Link href={routes.category(item.link)} key={index}>

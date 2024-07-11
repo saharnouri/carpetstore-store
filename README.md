@@ -1,7 +1,3 @@
-# spicesJet ui
-
-![Screenshot](https://raw.githubusercontent.com/mohsenAlipourr/spiceJet-store/main/public/images/spices%20jet%20ui1.jpg)
-![Screenshot](https://raw.githubusercontent.com/mohsenAlipourr/spiceJet-store/main/public/images/spices%20jet%20ui2.jpg)
 
 ## Required Tools Version
 

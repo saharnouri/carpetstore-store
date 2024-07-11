@@ -20,7 +20,7 @@ export interface HomeDataApiResponse {
 		}[];
 	};
 	sliderProducts: {
-		bestOffer: {
+		/* bestOffer: {
 			title: string;
 			list: {
 				id: string;
@@ -28,7 +28,7 @@ export interface HomeDataApiResponse {
 				title: string;
 				price: number;
 			}[];
-		};
+		}; */
 
 		bestSelling: {
 			title: string;

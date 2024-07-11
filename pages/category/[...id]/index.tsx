@@ -14,7 +14,7 @@ const Category = (props: CategoryType) => {
 	return (
 		<>
 			<Head>
-				<title>spiceJet - Category</title>
+				<title>carpetdiem - Category</title>
 			</Head>
 
 			<CategoryProduct data={props.data.data} />

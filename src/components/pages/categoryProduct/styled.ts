@@ -39,6 +39,8 @@ export const Sidebar = styled.div(() => ({
 export const Search = styled.div(() => ({
 	display: 'flex',
 	flexDirection: 'column',
+	
+	    
 }));
 
 export const PriceRange = styled.div(() => ({
@@ -56,5 +58,6 @@ export const CategoryFilter = styled.div(() => ({
 		color: black[100],
 		borderBottom: '3px solid #e0e0e6',
 		paddingBottom: 7,
+		direction: 'rtl',
 	},
 }));
